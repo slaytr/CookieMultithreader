@@ -1,7 +1,6 @@
 import threading
 import time
 
-
 cookies_list = []
 
 # Simple multithreading example in python
@@ -25,6 +24,7 @@ def print_mixed_cookies(cookie_list):
             batch_b +=1
         j=i
     print("Clustered Batch A's {} Clustered Batch B's {}".format(batch_a, batch_b))
+    print("There are at least {} cookies in Batch A that are followed by an A cookie and at least {} cookies in Batch B immediately followed by a B cookie".format(batch_a, batch_b))
 
 Cookie_Cooker_One = threading.Thread(target=cook_a_cookie, args=(0, "A"))
 Cookie_Cooker_Two = threading.Thread(target=cook_a_cookie, args=(3, "B"))

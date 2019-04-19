@@ -1,2 +1,7 @@
-# CookieMultithreader
-Simple module to visually represent race conditions from multi threading on CPU
+#### CookieMultithreader
+
+A python script to witness race conditions during which functions are multithreaded without locks. 
+
+#### Use
+
+* ./run.sh
